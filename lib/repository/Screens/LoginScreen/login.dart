@@ -1,3 +1,4 @@
+import 'package:blinkit_app/repository/Screens/bottombar/botombar.dart';
 import 'package:blinkit_app/repository/Widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
@@ -82,7 +83,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                 image: UIHelper.customImage(image: 'logo3.png'))
                           ],
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: ((context) => const BottomBr())));
+                        },
                       ),
                     ),
                     const SizedBox(

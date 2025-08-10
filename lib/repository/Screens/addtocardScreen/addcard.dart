@@ -21,7 +21,7 @@ class _AddtoCardState extends State<AddtoCard> {
           height: 180,
           width: double.infinity,
           decoration: const BoxDecoration(
-              color: Color(0xffEC0505),
+              color: Color(0xffF7CB45),
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20), topRight: Radius.circular(20))),
           child: Column(

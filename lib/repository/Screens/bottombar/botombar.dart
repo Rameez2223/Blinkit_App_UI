@@ -17,8 +17,8 @@ class _BottomBrState extends State<BottomBr> {
 
   List<Widget> page = [
     HomeScreen(),
-    CategoriesScreen(),
     AddtoCard(),
+    CategoriesScreen(),
     PrintScreen(),
   ];
   @override

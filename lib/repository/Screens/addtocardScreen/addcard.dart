@@ -54,8 +54,12 @@ class _AddtoCardState extends State<AddtoCard> {
                   const Spacer(),
                   const CircleAvatar(
                     radius: 20,
-                    backgroundColor: Color(0xff000000),
-                    child: Center(child: Icon(Icons.person)),
+                    backgroundColor: Color(0xffFFFFFF),
+                    child: Center(
+                        child: Icon(
+                      Icons.person,
+                      color: Color(0xff000000),
+                    )),
                   ),
                   const SizedBox(
                     width: 20,

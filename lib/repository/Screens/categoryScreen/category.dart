@@ -10,6 +10,56 @@ class CategoriesScreen extends StatefulWidget {
 }
 
 class _CategoriesScreenState extends State<CategoriesScreen> {
+  List kitchen = [
+    {
+      "image":
+          "https://www.baskilicious.com/cdn/shop/files/gifts_-_2024-10-20T225603.847_1024x1024.png?v=1729450732",
+      "text": "Vegetables &",
+      "text2": "Fruits"
+    },
+    {
+      "image":
+          "https://www.fluorescentstudios.in/cdn/shop/articles/Diwali_Gift_ideas_1.png?v=1729495275",
+      "text": "Vegetables &",
+      "text2": "Fruits"
+    },
+    {
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJ_jM96uNzvR2Jknkx-JxgqGgFfUfCoXslQ&s",
+      "text": "Vegetables &",
+      "text2": "Fruits"
+    },
+    {
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2vxitCSC0lG3uG978hN8ixtDAKX1fK2VlKA&s",
+      "text": "Vegetables &",
+      "text2": "Fruits"
+    },
+    {
+      "image":
+          "https://cdn5.vectorstock.com/i/1000x1000/65/14/happy-diwali-diya-candles-set-on-brown-background-vector-34276514.jpg",
+      "text": "Vegetables &",
+      "text2": "Fruits"
+    },
+    {
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyuFG37omgG8D0Lq-e04QIJzId4IbxHbl5w&s",
+      "text": "Vegetables &",
+      "text2": "Fruits"
+    },
+    {
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3VjM9jehDTlHjMPydYDu7CVMUpepC7dmYYxRK1jd2ffqMp2M6cbGeKAFpchpbGWXvsw&usqp=CAU",
+      "text": "Vegetables &",
+      "text2": "Fruits"
+    },
+    {
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDWS4iHYxM3I0pOT93YWI0G0VDlOMWJJYTw&s",
+      "text": "Vegetables &",
+      "text2": "Fruits"
+    },
+  ];
   TextEditingController searchbar = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -142,6 +192,272 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                   ),
                 )
               ],
+            ),
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 26,
+                      ),
+                      UIHelper.customText(
+                          text: 'Grocery & Kitchen',
+                          fontWeight: FontWeight.w700,
+                          color: const Color(0xff000000),
+                          font: 18)
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                    ),
+                    child: SizedBox(
+                        height: 130,
+                        width: double.infinity,
+                        child: ListView.builder(
+                          itemBuilder: ((context, index) {
+                            return Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 7),
+                              child: Column(
+                                children: [
+                                  Container(
+                                      height: 80,
+                                      width: 73,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                              color: const Color(0xffffffff)),
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.network(
+                                          kitchen[index]['image'],
+                                          fit: BoxFit
+                                              .cover, // maintains image proportions
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [Text(kitchen[index]['text'])],
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [Text(kitchen[index]['text2'])],
+                                  ),
+                                ],
+                              ),
+                            );
+                          }),
+                          itemCount: kitchen.length,
+                          scrollDirection: Axis.horizontal,
+                        )),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                    ),
+                    child: SizedBox(
+                        height: 130,
+                        width: double.infinity,
+                        child: ListView.builder(
+                          itemBuilder: ((context, index) {
+                            return Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 7),
+                              child: Column(
+                                children: [
+                                  Container(
+                                      height: 80,
+                                      width: 73,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                              color: const Color(0xffffffff)),
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.network(
+                                          kitchen[index]['image'],
+                                          fit: BoxFit
+                                              .cover, // maintains image proportions
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [Text(kitchen[index]['text'])],
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [Text(kitchen[index]['text2'])],
+                                  ),
+                                ],
+                              ),
+                            );
+                          }),
+                          itemCount: kitchen.length,
+                          scrollDirection: Axis.horizontal,
+                        )),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 26,
+                      ),
+                      UIHelper.customText(
+                          text: 'Snacks & Drinks',
+                          fontWeight: FontWeight.w700,
+                          color: const Color(0xff000000),
+                          font: 18)
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                    ),
+                    child: SizedBox(
+                        height: 130,
+                        width: double.infinity,
+                        child: ListView.builder(
+                          itemBuilder: ((context, index) {
+                            return Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 7),
+                              child: Column(
+                                children: [
+                                  Container(
+                                      height: 80,
+                                      width: 73,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                              color: const Color(0xffffffff)),
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.network(
+                                          kitchen[index]['image'],
+                                          fit: BoxFit
+                                              .cover, // maintains image proportions
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [Text(kitchen[index]['text'])],
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [Text(kitchen[index]['text2'])],
+                                  ),
+                                ],
+                              ),
+                            );
+                          }),
+                          itemCount: kitchen.length,
+                          scrollDirection: Axis.horizontal,
+                        )),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 26,
+                      ),
+                      UIHelper.customText(
+                          text: 'Household Essentials',
+                          fontWeight: FontWeight.w700,
+                          color: const Color(0xff000000),
+                          font: 18)
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                    ),
+                    child: SizedBox(
+                        height: 130,
+                        width: double.infinity,
+                        child: ListView.builder(
+                          itemBuilder: ((context, index) {
+                            return Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 7),
+                              child: Column(
+                                children: [
+                                  Container(
+                                      height: 80,
+                                      width: 73,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                              color: const Color(0xffffffff)),
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.network(
+                                          kitchen[index]['image'],
+                                          fit: BoxFit
+                                              .cover, // maintains image proportions
+                                        ),
+                                      )),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [Text(kitchen[index]['text'])],
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [Text(kitchen[index]['text2'])],
+                                  ),
+                                ],
+                              ),
+                            );
+                          }),
+                          itemCount: kitchen.length,
+                          scrollDirection: Axis.horizontal,
+                        )),
+                  ),
+                ],
+              ),
             ),
           ),
         ]),

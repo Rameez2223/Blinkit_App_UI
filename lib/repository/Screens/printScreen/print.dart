@@ -172,8 +172,8 @@ class _PrintScreenState extends State<PrintScreen> {
             const SizedBox(
               height: 80,
             ),
-            Center(
-              child: Container(
+            Stack(children: [
+              Container(
                 height: 180,
                 width: 380,
                 decoration: BoxDecoration(
@@ -195,11 +195,99 @@ class _PrintScreenState extends State<PrintScreen> {
                             color: const Color(0xff000000),
                             font: 16)
                       ],
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Row(
+                      children: [
+                        const SizedBox(
+                          width: 15,
+                        ),
+                        Image(image: UIHelper.customImage(image: 'bolt.png')),
+                        const SizedBox(
+                          width: 6,
+                        ),
+                        UIHelper.customText(
+                            text: 'Price starting at rs 3/page',
+                            fontFamily: 'regular',
+                            fontWeight: FontWeight.w400,
+                            color: const Color(0xff9C9C9C),
+                            font: 14)
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        const SizedBox(
+                          width: 15,
+                        ),
+                        Image(image: UIHelper.customImage(image: 'bolt.png')),
+                        const SizedBox(
+                          width: 6,
+                        ),
+                        UIHelper.customText(
+                            text: 'Price starting at rs 3/page',
+                            fontFamily: 'regular',
+                            fontWeight: FontWeight.w400,
+                            color: const Color(0xff9C9C9C),
+                            font: 14)
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        const SizedBox(
+                          width: 15,
+                        ),
+                        Image(image: UIHelper.customImage(image: 'bolt.png')),
+                        const SizedBox(
+                          width: 6,
+                        ),
+                        UIHelper.customText(
+                            text: 'Price starting at rs 3/page',
+                            fontFamily: 'regular',
+                            fontWeight: FontWeight.w400,
+                            color: const Color(0xff9C9C9C),
+                            font: 14)
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const SizedBox(
+                          width: 30,
+                        ),
+                        SizedBox(
+                          height: 40,
+                          width: 125,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color(0xff27AF34)),
+                            onPressed: () {},
+                            child: const Text(
+                              'Upload Files',
+                              style: TextStyle(
+                                  color: Color(0xffFFFFFF),
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 14,
+                                  fontFamily: 'bold'),
+                            ),
+                          ),
+                        ),
+                      ],
                     )
                   ],
                 ),
               ),
-            )
+              Positioned(
+                  right: 10,
+                  top: 40,
+                  child: Image(
+                    image: UIHelper.customImage(image: 'image62.png'),
+                  ))
+            ])
           ],
         ),
       ),

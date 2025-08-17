@@ -15,7 +15,7 @@ class BottomBr extends StatefulWidget {
 class _BottomBrState extends State<BottomBr> {
   int currentindex = 0;
 
-  List<Widget> page = [
+  List<Widget> page = const[
     HomeScreen(),
     AddtoCard(),
     CategoriesScreen(),
